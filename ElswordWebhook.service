@@ -1,0 +1,11 @@
+  [Unit]
+  Description=ElswordWebhook
+
+  [Service]
+  Restart=always
+  User=pi
+  WorkingDirectory=/home/pi/PythonProject/ELswordWebhook
+  ExecStart=/usr/local/bin/python3.9 /home/pi/PythonProject/ELswordWebhook/run.py
+
+  [Install]
+  WantedBy=multi-user.target
