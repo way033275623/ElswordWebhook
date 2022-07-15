@@ -56,5 +56,3 @@ while(1):
         logging.error(e)
         time.sleep(60)
 
-#TEST
-
