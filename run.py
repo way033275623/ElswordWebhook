@@ -44,10 +44,9 @@ while(1):
             for x in data:
                 if(x['link'] not in oldarticle):
                     webhook(x)
+                    oldarticle.append(x['link'])
 
-            time.sleep(60)
-
-            
+            time.sleep(60)   
         else:
             for x in data:
                 #webhook(x)
